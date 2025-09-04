@@ -1,0 +1,9 @@
+assets/ASAP/training_set_rel3.xlsx
+assets/ASAP/cross-prompt/
+assets/ASAP/cross-prompt-individual/
+assets/PERSUADE2.0/cross-prompt/
+assets/PERSUADE2.0/persuade_corpus_2.0_train.csv
+assets/PERSUADE2.0/persuade_corpus_2.0_test.csv
+bash_scripts/
+**/__pycache__
+src/test.ipynb

@@ -1,0 +1,36 @@
+### trainer config
+# seed: 42
+output_dir: ckpt # placeholder
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 8 # effective batch size= 2*8 =16
+gradient_checkpointing: false
+max_grad_norm: 0.3
+per_device_eval_batch_size: 2
+learning_rate: 0.0001 # 1e-4
+bf16: true
+num_train_epochs: 10
+lr_scheduler_type: cosine
+logging_steps: 1
+eval_strategy: steps
+save_strategy: steps
+eval_steps: 30
+save_steps: 30
+save_total_limit: 1
+load_best_model_at_end: true
+save_only_model: true
+label_names: ['labels']
+optim: paged_adamw_32bit
+report_to: none
+# report_to: wandb
+# run_name: sft
+# disable_tqdm: false
+
+### sft config
+max_seq_length: 4096
+
+### lora config
+r: 16
+lora_alpha: 32
+lora_dropout: 0.10
+target_modules: ['q_proj','k_proj','v_proj','o_proj','gate_proj','up_proj','down_proj']
+
