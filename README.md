@@ -5,7 +5,7 @@ This is the code implementation of the EMNLP 2025 paper
 
 ## Dependencies
 
-To run the code, please install [poetry](https://docs.astral.sh/uv/getting-started/installation/) and install all dependencies specified in `pyproject.toml` using the following command
+To run the code, please install [uv](https://docs.astral.sh/uv/getting-started/installation/) and install all dependencies specified in `pyproject.toml` using the following command
 ```bash
 uv sync
 ```
